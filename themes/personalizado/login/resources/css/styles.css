@@ -1,23 +1,198 @@
-body {
-    background-image: url('/resources/dmhkq/login/personalizado/img/login.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 100vh;
-    padding-top: 50px;
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/dmhkq/login/personalizado/fonts/Poppins-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
 }
-.login-container {
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/dmhkq/login/personalizado/fonts/Poppins-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/dmhkq/login/personalizado/fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/dmhkq/login/personalizado/fonts/Poppins-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/dmhkq/login/personalizado/fonts/Poppins-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/dmhkq/login/personalizado/fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/dmhkq/login/personalizado/fonts/Poppins-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/dmhkq/login/personalizado/fonts/Poppins-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/dmhkq/login/personalizado/fonts/Poppins-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/dmhkq/login/personalizado/fonts/Poppins-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/dmhkq/login/personalizado/fonts/Poppins-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/dmhkq/login/personalizado/fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/dmhkq/login/personalizado/fonts/Poppins-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/dmhkq/login/personalizado/fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/dmhkq/login/personalizado/fonts/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/dmhkq/login/personalizado/fonts/Poppins-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/dmhkq/login/personalizado/fonts/Poppins-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/resources/dmhkq/login/personalizado/fonts/Poppins-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+body {
+    font-family: Poppins !important;
+}
+.fondo-rojo {
+    position: absolute;
+    height: 60%;
+    width: 100%;
+}
+.contenedor.principal {
+    position: relative;
+    padding: 0px 80px;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.row {
+    display: flex;
+    width: 100%;
+}
+.col-12 {
+    width: 100%;
+}
+.mb-3 {
+    margin-bottom: 1.5rem;
+}
+.text-end {
+    text-align: end;
+}
+.form-control {
+    font-size: 15px !important;
+    font-weight: 400 !important;
+}
+.contenedor-volver {
+    width: 100%;
+    position: relative;
+    bottom: 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.contenedor-requisito {
+    width: 100%;
+    font-size: 13px;
+}
+.contenedor-requisito .row {
+    margin-bottom: 5px;
+}
+.contenedor-detalle>div:not(.d-none) {
     padding: 35px;
     border: 1px solid #ccc;
     border-radius: 25px;
     margin-left: 25px;
     margin-right: 15px;
-    height: 555px;
+    width: 100%;
+    aspect-ratio: 550/596;
+    background-color: white;;
 }
-.login-container .h1 {
-    font-size: 25px;
+.registro-container .contenedor-celular {
+    display: flex;
+}
+.registro-container .contenedor-celular .form-control {
+    height: 36px;
+}
+.registro-container .contenedor-celular .codigo {
+    width: 90%;
+    cursor: pointer;
+}
+.form .h1 {
+    font-size: 24px;
     text-align: center;
-    font-weight: bold;
+    font-weight: 600;
 }
 .login-container .logo {
     margin: auto;
@@ -26,26 +201,144 @@ body {
 }
 .login-container .form {
     margin-top: 15px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 .login-container .form .form-control {
     border-radius: 7px;
     height: 45px;
 }
-.login-container .form .form-label {
-    font-weight: bold;
+.form .form-label {
+    font-weight: 500;
     margin-bottom: 3px;
-}
-.login-container .form .form-check-label,
-.login-container .form a {
     font-size: 15px;
-    font-weight: bold;
 }
-.login-container .form .btn-container {
-    margin-top: 110px;
+.form-check-label,
+.form a {
+    font-size: 14px;
+    font-weight: 400;
 }
-.login-container .form .btn-container .btn {
-    border-radius: 7px;
-    height: 45px;
-    border-width: 3px;
-    font-weight: bold;
+.verificar-container .form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+.crear-clave-container .form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.codigo-container .form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.final-container .form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.final-container .form .contenedor-imagen {
+    width: 70%;
+}
+.final-container .form .contenedor-imagen img {
+    width: 100%;
+}
+.verificar-container .form .contenedor-btn-envio {
+    cursor: pointer;
+}
+.registro-container {
+}
+.registro-container .form {
+    display: flex;
+    align-items: end;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contenedor-formulario, .contenedor-breadcrumb, .contenedor-texto {
+    width: 100%;
+    text-align: center;
+}
+div:has(label) {
+    text-align: left;
+}
+.container.botones {
+    padding-top: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container.botones .seccion.superior {
+    display: flex;
+    justify-content: end;   
+}
+.container.botones .seccion.superior .btn {
+    width: 106px;
+    height: 44px;
+    border: 1px solid white;
+    color: white;
+    padding: 8px;
+    display: flex;
+    font-size: 12px;
+    margin-left: 20px;
+    border-radius: 8px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+.container.botones .seccion.inferior {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.container.botones .seccion.inferior .titulo {
+    width: 340px;
+    color: black;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container.botones .seccion.inferior .btn {
+    width: 340px;
+    height: 50px;
+    border: 2px solid black;
+    color: black;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 15px;
+    border-radius: 8px;
+        line-height: 2;
+}
+.container.botones .seccion.inferior .btn.registrate-google svg{
+    margin-right: 15px;
+}
+.codigo-container .contenedor-formulario {
+    justify-content: center;
+}
+.codigo-container .contenedor-formulario .form-control {
+    width: 40px;
+    height: 44px;
+    margin: 5px;
+    text-align: center;
+}
+.progress {
+    height: 5px !important;
+    margin-bottom: 10px;
 }
