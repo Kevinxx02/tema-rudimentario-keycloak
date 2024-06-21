@@ -75,6 +75,61 @@
                         </div>
                     </form>
                 </div>
+                <div class="tyc-container d-none">
+                    <form action="${url.loginAction}" class="form" method="post">
+                        <div class="contenedor-volver" onclick="cambiarContenedor('.registro-container')">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4184_166633)">
+                                    <path
+                                        d="M4.94168 5.60564L1.02268 9.52464C0.386306 10.1915 0.03125 11.0779 0.03125 11.9996C0.03125 12.9214 0.386306 13.8078 1.02268 14.4746L4.94168 18.3936C5.08005 18.5369 5.24557 18.6512 5.42858 18.7298C5.61158 18.8084 5.80841 18.8498 6.00758 18.8515C6.20675 18.8533 6.40427 18.8153 6.58861 18.7399C6.77296 18.6645 6.94044 18.5531 7.08127 18.4122C7.22211 18.2714 7.33349 18.1039 7.40891 17.9196C7.48434 17.7352 7.52229 17.5377 7.52056 17.3385C7.51883 17.1394 7.47745 16.9425 7.39883 16.7595C7.32022 16.5765 7.20595 16.411 7.06268 16.2726L4.28368 13.4916L22.5337 13.4686C22.9315 13.4686 23.313 13.3106 23.5943 13.0293C23.8756 12.748 24.0337 12.3665 24.0337 11.9686C24.0337 11.5708 23.8756 11.1893 23.5943 10.908C23.313 10.6267 22.9315 10.4686 22.5337 10.4686L4.29868 10.4916L7.06268 7.72664C7.33592 7.44374 7.48711 7.06483 7.48369 6.67154C7.48028 6.27824 7.32252 5.90202 7.04441 5.62391C6.7663 5.3458 6.39008 5.18804 5.99678 5.18463C5.60349 5.18121 5.22458 5.3324 4.94168 5.60564Z"
+                                        fill="#010101" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_4184_166633">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            Volver
+                        </div>
+                        <div class="contenedor-texto">
+                            <div class="row">
+                                <div class="col-12 h1" style="font-size: 20px;margin-bottom: 10px;">
+                                    Términos y condiciones
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12" style="font-size: 13px;">
+                                    It is a long established fact that a reader will be distracted by the readable content of a page
+                                    when looking at its
+                                    layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                                    as opposed to using
+                                    'Content here, content here', making it look like readable English. Many desktop publishing packages
+                                    and web page
+                                    editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover
+                                    many web sites
+                                    still in their infancy. Various versions have evolved over the years, sometimes by accident,
+                                    sometimes on purpose
+                                    (injected humour and the like).
+                
+                                    It is a long established fact that a reader will be distracted by the readable content of a page
+                                    when looking at its
+                                    layout.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row btn-container">
+                            <div class="col-6">
+                                <button type="button" class="btn btn-outline-secondary w-100"
+                                    onclick="cambiarContenedor('.login-container')">Declinar</button>
+                            </div>
+                            <div class="col-6">
+                                <button type="button" class="btn btn-danger w-100"
+                                    onclick="cambiarContenedor('.registro-container')">Aceptar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
                 <div class="registro-container d-none">
                     <form action="${url.loginAction}" class="form" method="post">
                         <div class="contenedor-breadcrumb">
@@ -201,7 +256,7 @@
                 </div>
                 <div class="crear-clave-container d-none">
                     <form action="${url.loginAction}" class="form" method="post">
-                        <div class="contenedor-volver" onclick="cambiarContenedor('.registro-container')">
+                        <div class="contenedor-volver" onclick="cambiarContenedor('.login-container')">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_4184_166633)">
                                     <path d="M4.94168 5.60564L1.02268 9.52464C0.386306 10.1915 0.03125 11.0779 0.03125 11.9996C0.03125 12.9214 0.386306 13.8078 1.02268 14.4746L4.94168 18.3936C5.08005 18.5369 5.24557 18.6512 5.42858 18.7298C5.61158 18.8084 5.80841 18.8498 6.00758 18.8515C6.20675 18.8533 6.40427 18.8153 6.58861 18.7399C6.77296 18.6645 6.94044 18.5531 7.08127 18.4122C7.22211 18.2714 7.33349 18.1039 7.40891 17.9196C7.48434 17.7352 7.52229 17.5377 7.52056 17.3385C7.51883 17.1394 7.47745 16.9425 7.39883 16.7595C7.32022 16.5765 7.20595 16.411 7.06268 16.2726L4.28368 13.4916L22.5337 13.4686C22.9315 13.4686 23.313 13.3106 23.5943 13.0293C23.8756 12.748 24.0337 12.3665 24.0337 11.9686C24.0337 11.5708 23.8756 11.1893 23.5943 10.908C23.313 10.6267 22.9315 10.4686 22.5337 10.4686L4.29868 10.4916L7.06268 7.72664C7.33592 7.44374 7.48711 7.06483 7.48369 6.67154C7.48028 6.27824 7.32252 5.90202 7.04441 5.62391C6.7663 5.3458 6.39008 5.18804 5.99678 5.18463C5.60349 5.18121 5.22458 5.3324 4.94168 5.60564Z" fill="#010101" />
@@ -353,7 +408,7 @@
                 </div>
                 <div class="verificar-container d-none">
                     <form action="${url.loginAction}" class="form" method="post">
-                        <div class="contenedor-volver" onclick="cambiarContenedor('.registro-container')">
+                        <div class="contenedor-volver" onclick="cambiarContenedor('.login-container')">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_4184_166633)">
                                     <path
@@ -479,7 +534,7 @@
                 </div>
                 <div class="codigo-container d-none">
                     <form action="${url.loginAction}" class="form" method="post">
-                        <div class="contenedor-volver" onclick="cambiarContenedor('.registro-container')">
+                        <div class="contenedor-volver" onclick="cambiarContenedor('.login-container')">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_4184_166633)">
                                     <path
@@ -574,7 +629,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="final-container d-none">
+                <div class="correo-container d-none">
                     <form action="${url.loginAction}" class="form" method="post">
                         <div class="contenedor-imagen">
                             <img src="${url.resourcesPath}/img/cuenta-creada.png">
@@ -594,6 +649,33 @@
                                 <a href="#">
                                     Revisar tu correo
                                 </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="final-container d-none">
+                    <form action="${url.loginAction}" class="form" method="post">
+                        <div class="contenedor-imagen">
+                            <img src="${url.resourcesPath}/img/cuenta-creada.png">
+                        </div>
+                        <div class="row">
+                            <div class="col-12 h1" style="font-size: 20px;">
+                                ¡Tu cuenta ha sido creada con éxito!
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12" style="font-size: 13px;">
+                                Toda tu información fue actualizada satisfactoriamente
+                            </div>
+                        </div>
+                        <div class="row btn-container">
+                            <div class="col-6">
+                                <button type="button" class="btn btn-outline-secondary w-100"
+                                    onclick="cambiarContenedor('.login-container')">Cerrar</button>
+                            </div>
+                            <div class="col-6">
+                                <button type="button" class="btn btn-danger w-100"
+                                    onclick="cambiarContenedor('.registro-container')">Ingresar</button>
                             </div>
                         </div>
                     </form>
@@ -674,7 +756,7 @@
                                 <line y1="0.5" x2="64" y2="0.5" stroke="black" />
                             </svg>
                         </div>
-                        <div class="btn registrate" onclick="cambiarContenedor('.registro-container')">
+                        <div class="btn registrate" onclick="cambiarContenedor('.tyc-container')">
                             Registrate
                         </div>
                         <div class="btn registrate-google">
